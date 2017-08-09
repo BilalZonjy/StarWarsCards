@@ -1,0 +1,73 @@
+body{
+background-color:#494a4c ;
+
+}
+#main{
+        background-image:url(../images/Black_Sun_fortress_Mustafar.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-opacity: 0.2; 
+        background-filter: alpha(opacity=20);
+
+        height: 600px;
+        width: 750px;
+    }
+
+
+.text_header{
+
+    color: #ffffff;
+    font-size: 40px;
+}
+.text_header_2nd{
+    color: #ffffff;
+    font-size: 25px;
+
+}
+
+
+.text_3nd{
+    color: #ffffff;
+    font-size: 16px;
+
+
+}
+
+.pri_game{
+
+    cursor: pointer;
+}
+
+.character{
+
+    height: 95px;
+    width: 120px;
+    float: left;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid green;
+    margin-left: 10px;
+}
+.character img{
+
+height: 50px;
+width: 100px;
+}
+
+.enemies_available{
+background-color: #660404;
+cursor: pointer;
+}
+
+
+.during_game{
+    visibility: hidden;
+    
+}
+
+
+.enemies_available div{
+color: #ffffff;
+}

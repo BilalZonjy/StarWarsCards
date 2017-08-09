@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<title>Star War</title>
+</head>
+<body>
+
+	<div class="container" id="main" style="height: 625px;width: 750px;">
+		<div class="row" style="height: 50px;">
+			<div class="col-sm-6"></div>
+			<div class="col-sm-6 text_header"> Star War RPG!</div>
+			</div>
+		<div class="row" style="height: 115px; padding-left: 20px">
+			
+			    <div class="thumbnail character pri_game" id = 'Anakin_Skywalker' style="data">
+				    	<div>Anakin Skywalker</div>
+				    	<img src="assets/images/Anakin_Skywalker.jpg" alt="...">
+				    	<div class="caption">
+				        <div>120</div>
+				      </div>
+				    </div>
+
+
+			    <div class="thumbnail character pri_game" id = 'obi_wan_kenobi'>
+				    	<div>Obi Wan Kenobi</div>
+				    	<img src="assets/images/obi_wan_kenobi.jpg" alt="...">
+				    	<div class="caption">
+				        <div>150</div>
+				      </div>
+				    </div>
+
+			    <div class="thumbnail character pri_game" id = 'Darth_Tyranus'>
+				    	<div>Darth Tyranus</div>
+				    	<img src="assets/images/Darth_Tyranus.jpg" alt="...">
+				    	<div class="caption">
+				        <div>100</div>
+				      </div>
+				    </div>
+
+
+			    <div class="thumbnail character pri_game" id = 'darth_sidious'>
+				    	<div>Darth Sidious</div>
+				    	<img src="assets/images/darth_sidious.jpg" alt="...">
+				    	<div class="caption">
+				        <div>300</div>
+				      </div>
+				    </div>
+
+			</div>
+		<div class="row" style="height: 45px;">
+			<div class="col-sm-6 text_header_2nd"> Your Character</div>	
+			<div class="col-sm-6"></div>
+			</div>	
+		<div class="row" style="height: 110px; padding-left: 20px;">
+
+			<div class="col-sm-6">
+			    <div class="thumbnail character during_game" id = 'your_character'>
+				    	<div id="your_character_ch_name">Anakin Skywalker</div>
+				    	<img src="assets/images/Anakin_Skywalker.jpg" alt="..." id="your_character_ch_img">
+				    	<div class="caption">
+				        <div id="your_character_ch_health">120</div>
+				      </div>
+
+					        <div class="progress" style="height: 10px;">
+  							<div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="your_character_ch_health_bar"></div>
+							</div>
+
+				    </div>
+				</div>
+			<div class="col-sm-6"></div>
+			</div>
+		<div class="row" style="height: 40px;">
+			<div class="col-sm-6 text_header_2nd"> Enemies Available to Attack</div>
+			<div class="col-sm-6"></div>			
+			</div>
+		<div class="row ch_to_attack" style="height: 105px; padding-left: 20px;">			
+			    <div class="thumbnail character during_game enemies_available" id = 'enemies_available_1'>
+				    	<div id="enemies_available_1_ch_name">Anakin Skywalker</div>
+				    	<img src="assets/images/Anakin_Skywalker.jpg" alt="..." id="enemies_available_1_ch_img">
+				    	<div class="caption">
+				        <div id="enemies_available_1_ch_health">health</div>
+				      </div>
+				    </div>
+			    <div class="thumbnail character during_game enemies_available" id = 'enemies_available_2'>
+				    	<div id="enemies_available_2_ch_name">Anakin Skywalker</div>
+				    	<img src="assets/images/Anakin_Skywalker.jpg" alt="..." id="enemies_available_2_ch_img">
+				    	<div class="caption">
+				        <div id="enemies_available_2_ch_health">health</div>
+				      </div>
+				    </div>
+			    <div class="thumbnail character during_game enemies_available" id = 'enemies_available_3'>
+				    	<div id="enemies_available_3_ch_name">Anakin Skywalker</div>
+				    	<img src="assets/images/Anakin_Skywalker.jpg" alt="..." id="enemies_available_3_ch_img">
+				    	<div class="caption">
+				        <div id="enemies_available_3_ch_health">health</div>
+				      </div>
+				    </div>
+				</div>
+		<div class="row" style="height: 40px;">
+			<div class="col-sm-6 text_header_2nd" style="position: relative;top:-10px;">
+				Fight Section
+				</div>
+			<div class="col-sm-6  text_header_2nd" style="position: relative;top:-10px;">
+				Defender
+				</div>			
+			</div>			
+		<div class="row" style="height: 115px;">
+			<div class="col-sm-6 fight_ctr"> 
+				<button class="btn btn-default btn-lg vis-button during_game" id="attack_btn"><span class="glyphicon glyphicon-screenshot"></span> Attack</button>
+				<div class="text_3nd during_game" id="Damage_report">  </div>
+				</div>
+
+			<div class="col-sm-6 enemy_pic" style="padding-left: 20px;"">
+			    <div class="thumbnail character during_game"  id = 'defender' style="position: relative;top:-10px;">
+				    	<div  id="defender_ch_name">Anakin Skywalker</div>
+				    	<img src="assets/images/Anakin_Skywalker.jpg" alt="..." id="defender_ch_img">
+				    	<div class="caption">
+				        <div id="defender_ch_health">health</div>
+
+				      		</div>
+				        <div class="progress" style="height: 10px;">
+  							<div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="defender_ch_health_bar"></div>
+							</div>
+				    	</div>				
+				<button class="btn btn-default btn-lg vis-button during_game" id="Restart_btn" style="float: left;"><span class="glyphicon glyphicon-repeat"></span> Restart</button>					
+					</div>			
+
+
+				</div>	
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"> </script>
+</body>
+</html>
+
+
